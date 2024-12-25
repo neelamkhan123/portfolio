@@ -1,0 +1,152 @@
+.container {
+  display: flex;
+  height: 95%;
+}
+
+.icons {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+  position: relative;
+}
+
+.icon {
+  background-color: rgb(237, 237, 237);
+  color: var(--button-color-2);
+  border: none;
+  height: 50px;
+  width: 50px;
+  font-size: 2rem;
+  border-radius: 25%;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: var(--button-box-shadow);
+  text-decoration: none;
+}
+
+.icon:hover {
+  background-color: white;
+  color: var(--button-color-1);
+  transition: all 0.5s ease-in-out;
+}
+
+.icon-anim-one {
+  animation: peek-a-boo-1 0.8s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.icon-anim-two {
+  animation: peek-a-boo-2 0.8s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.icon-anim-three {
+  animation: peek-a-boo-3 0.8s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes peek-a-boo-1 {
+  0% {
+    top: 0px;
+  }
+
+  90% {
+    top: 10px;
+  }
+
+  100% {
+    top: 0px;
+  }
+}
+
+@keyframes peek-a-boo-2 {
+  0% {
+    top: 0px;
+  }
+
+  90% {
+    top: 90px;
+  }
+
+  100% {
+    top: 80px;
+  }
+}
+
+@keyframes peek-a-boo-3 {
+  0% {
+    top: 0px;
+  }
+
+  90% {
+    top: 170px;
+  }
+
+  100% {
+    top: 160px;
+  }
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1420px) {
+  .icon {
+    height: 45px;
+    width: 45px;
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 1300px) {
+  .icon {
+    left: 30px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 10%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .icon {
+    left: 20px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .icon {
+    left: 10px;
+  }
+}
+
+@media (max-width: 850px) {
+  .container {
+    width: 10%;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    width: 12%;
+  }
+}
+
+@media (max-width: 680px) {
+  .container {
+    width: 15%;
+  }
+}
+
+@media (max-width: 560px) {
+  .container {
+    width: 17%;
+  }
+}

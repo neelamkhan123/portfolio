@@ -1,0 +1,115 @@
+:root {
+  --default-font: "Roboto", sans-serif;
+  --header-font: "Roboto Mono", monospace;
+  --accent-color-1: rgb(203, 9, 203);
+  --accent-color-2: rgb(109, 255, 197);
+  --accent-color-3: rgb(247, 59, 225);
+  --accent-color-4: rgb(79, 0, 148);
+  --accent-color-5: rgb(67, 3, 82);
+  --accent-color-6: rgb(255, 134, 174);
+  --accent-color-7: #90ee90;
+  --header-font-color: rgb(67, 3, 82);
+  --heading-font-color: rgb(79, 0, 148);
+  --default-font-color: rgb(44, 44, 44);
+  --light-font-color: rgb(255, 255, 255);
+  --alt-font-color: rgb(255, 255, 255);
+  --button-color-1: rgb(247, 59, 225);
+  --button-color-2: rgb(143, 28, 244);
+  --button-color-3: rgb(199, 56, 239);
+  --button-bg-color: rgb(237, 237, 237);
+  --button-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  --button-box-shadow-fine: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  --divider: 1px solid rgba(211, 211, 255, 0.658);
+}
+
+body {
+  margin: 0;
+  padding: 2rem;
+  overflow: hidden;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(
+    45deg,
+    rgb(121, 252, 199) 10%,
+    rgb(203, 9, 203),
+    rgb(121, 252, 199),
+    rgb(247, 59, 225),
+    rgb(121, 252, 199)
+  );
+  background-size: 200%;
+  animation: bg-animation 6s infinite alternate;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  font-family: var(--default-font);
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+.html {
+  background-color: rgb(227, 76, 38);
+}
+
+.css {
+  background-color: rgb(38, 77, 228);
+}
+
+.tailwind {
+  background-color: rgb(165, 243, 252);
+}
+
+.sass {
+  background-color: rgb(204, 102, 153);
+}
+
+.javascript {
+  background-color: rgb(240, 219, 79);
+}
+
+.typescript {
+  background-color: rgb(0, 122, 204);
+}
+
+.react {
+  background-color: rgb(136, 221, 237);
+}
+
+.vue {
+  background-color: rgb(65, 184, 131);
+}
+
+.language {
+  margin-right: 1rem;
+  padding: 0.5rem 1rem;
+  color: var(--alt-font-color);
+  border-radius: 20px;
+  box-shadow: var(--button-box-shadow-fine);
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-family: var(--header-font);
+  color: var(--heading-font-color);
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1100px) {
+  body {
+    padding: 1rem;
+  }
+}
