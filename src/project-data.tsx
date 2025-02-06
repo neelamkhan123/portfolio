@@ -1,5 +1,37 @@
 import { ProjectTemplateProps } from "./components/Projects/ProjectTemplate";
 
+// Monthly Budget Planner
+export const budgetPlanner: ProjectTemplateProps = {
+  title: "Monthly Budget Planner",
+  languages: [
+    {
+      language: "Laravel",
+      className: "laravel",
+    },
+    {
+      language: "mySQL",
+      className: "mysql",
+    },
+    {
+      language: "JavaScript",
+      className: "javascript",
+    },
+    {
+      language: "CSS",
+      className: "css",
+    },
+    {
+      language: "HTML",
+      className: "html",
+    },
+  ],
+  links: [
+    {
+      gitHub: "https://github.com/neelamkhan123/budget-planner",
+    },
+  ],
+};
+
 // Recipe Blog
 export const recipeBlog: ProjectTemplateProps = {
   title: "Recipe Blog",
@@ -147,7 +179,7 @@ export const tipCalculator: ProjectTemplateProps = {
 
 // Gym Web Design Template
 export const gymWebDesign: ProjectTemplateProps = {
-  title: "Landing Page",
+  title: "3 Page Static Site",
   languages: [
     {
       language: "JavaScript",

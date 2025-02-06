@@ -40,6 +40,9 @@ const Card = ({
             <li className={`language typescript`}>TypeScript</li>
             <li className={`language react`}>React</li>
             <li className={`language vue`}>Vue</li>
+            <li className={`language mysql`}>mySQL</li>
+            <li className={`language php`}>PHP</li>
+            <li className={`language laravel`}>Laravel</li>
           </ul>
         </section>
       </header>

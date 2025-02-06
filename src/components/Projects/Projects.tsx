@@ -8,6 +8,7 @@ import { tipCalculator } from "../../project-data";
 import { gymWebDesign } from "../../project-data";
 import { trivia } from "../../project-data";
 import { calculator } from "../../project-data";
+import { budgetPlanner } from "../../project-data";
 
 import { MutableRefObject } from "react";
 import styles from "./Projects.module.css";
@@ -21,6 +22,11 @@ const Projects = ({ scrollToProjects }: ProjectProps): JSX.Element => {
     <article ref={scrollToProjects}>
       <h1 className="heading">Projects</h1>
       <section className={styles.container}>
+        <ProjectTemplate
+          title={budgetPlanner.title}
+          languages={budgetPlanner.languages}
+          links={budgetPlanner.links}
+        />
         <ProjectTemplate
           title={recipeBlog.title}
           languages={recipeBlog.languages}

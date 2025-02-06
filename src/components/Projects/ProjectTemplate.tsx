@@ -10,7 +10,7 @@ export type ProjectTemplateProps = {
   }[];
   links: {
     gitHub: string;
-    website: string;
+    website?: string;
   }[];
 };
 
@@ -35,24 +35,26 @@ const ProjectTemplate = ({
               )
             )}
           </ul>
-          <section className={styles.links}>
-            {links.map((link: { gitHub: string; website: string }, index) => (
-              <div className={styles["links-container"]} key={index}>
-                <Link target="_blank" to={link.gitHub} className={styles.link}>
-                  <i className="fa-brands fa-github"></i>
-                </Link>
-
-                <Link target="_blank" to={link.website} className={styles.link}>
-                  <i className="fa-solid fa-link"></i>
-                </Link>
-              </div>
-            ))}
-          </section>
         </div>
       </section>
 
       <section className={styles["text-container"]}>
         <h2 className={styles.heading}>{title}</h2>
+        <div className={styles.links}>
+           {links?.map((link: { gitHub: string; website?: string }, index) => (
+             <div className={styles["links-container"]} key={index}>
+               <Link target="_blank" to={link.gitHub} className={styles.link}>
+                 <i className="fa-brands fa-github"></i>
+               </Link>
+
+               {link.website && (
+                 <Link target="_blank" to={link.website} className={styles.link}>
+                   <i className="fa-solid fa-link"></i>
+                 </Link>
+               )}
+              </div>
+            ))}
+          </div>
       </section>
     </article>
   );

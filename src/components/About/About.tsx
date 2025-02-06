@@ -11,20 +11,18 @@ const About = ({ scrollToAbout }: AboutProps): JSX.Element => {
     <article className={styles.container} ref={scrollToAbout}>
       <h1 className="heading">About me</h1>
       <p className={styles.text}>
-        Hey there, I'm Neelam 👋 I am a dedicated and self-taught front-end
-        developer with a passion for crafting immersive and visually stunning
-        digital experiences. Currently, as a Junior Front End Developer at Euro
+        Hey there 👋  My name is Neelam and I am a frontend developer. Currently, as a Junior Front End Developer at Euro
         Communications, I focus on maintaining and enhancing website
         functionality, collaborating closely with team members.
       </p>
       <p className={styles.text}>
         My expertise lies web design, mastering tools like HTML & CSS, with a
         proficiency in advanced styling frameworks such as TailwindCSS and SASS
-        to create sleek and responsive user interfaces. I have also honed my
+        to create sleek and responsive user interfaces in the most effective and clean manner. I have also honed my
         skills in JavaScript and TypeScript, enabling me to bring interactivity
         and dynamic functionality to web applications. My proficiency extends to
         popular front-end libraries and frameworks, including React and Vue,
-        where I specialize in building modular and scalable components.
+        where I specialize in building modular and scalable components. More recently, I have ventured into backend lannguages and databases, PHP, Laravel, and mySQL.
       </p>
       <p className={styles.text}>
         With a keen eye for design and a commitment to staying at the forefront
