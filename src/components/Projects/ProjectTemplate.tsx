@@ -21,8 +21,7 @@ const ProjectTemplate = ({
 }: ProjectTemplateProps): JSX.Element => {
   return (
     <article className={styles.container}>
-      <section className={styles["thumb-container"]}>
-        <div className={styles["button-container"]}>
+        <section className={styles["button-container"]}>
           <ul className={styles.languages}>
             {languages.map(
               (lang: { language: string; className: string }, index) => (
@@ -35,8 +34,7 @@ const ProjectTemplate = ({
               )
             )}
           </ul>
-        </div>
-      </section>
+        </section>
 
       <section className={styles["text-container"]}>
         <h2 className={styles.heading}>{title}</h2>

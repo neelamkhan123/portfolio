@@ -24,7 +24,6 @@
 
 body {
   margin: 0;
-  padding: 2rem;
   overflow: hidden;
   box-sizing: border-box;
   height: 100vh;
@@ -100,28 +99,34 @@ body {
 }
 
 .language {
-  margin-right: 1rem;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.7rem;
   color: var(--alt-font-color);
   border-radius: 20px;
   box-shadow: var(--button-box-shadow-fine);
+  font-size: 0.8rem;
+}
+
+@media (min-width: 426px) { 
+  .language {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
 }
 
 .heading {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-family: var(--header-font);
   color: var(--heading-font-color);
   margin: 0;
   margin-bottom: 1rem;
 }
 
-::-webkit-scrollbar {
-  width: 0;
+@media (min-width: 550px) {
+  .heading {
+    font-size: 2.5rem;
+  }  
 }
 
-/* MEDIA QUERIES */
-@media (max-width: 1100px) {
-  body {
-    padding: 1rem;
-  }
+::-webkit-scrollbar {
+  width: 0;
 }

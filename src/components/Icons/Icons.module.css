@@ -1,6 +1,5 @@
 .container {
   display: flex;
-  height: 95%;
 }
 
 .icons {
@@ -10,16 +9,22 @@
   justify-content: flex-start;
   align-items: center;
   list-style: none;
-  position: relative;
+  padding: 1rem 0rem;
+  margin-top: 1rem;
+}
+
+.custom_icons_nav {
+  display: flex;
+  flex-direction: row;
 }
 
 .icon {
   background-color: rgb(237, 237, 237);
   color: var(--button-color-2);
   border: none;
-  height: 50px;
-  width: 50px;
-  font-size: 2rem;
+  height: 40px;
+  width: 40px;
+  font-size: 1.5rem;
   border-radius: 25%;
   margin: 1rem;
   display: flex;
@@ -28,6 +33,15 @@
   cursor: pointer;
   box-shadow: var(--button-box-shadow);
   text-decoration: none;
+}
+
+.custom_icon_nav {
+  margin: 0;
+  margin-right: 0.5rem;
+}
+
+.custom_icon_nav:last-child {
+  margin: 0;
 }
 
 .icon:hover {
@@ -95,58 +109,10 @@
 
 /* MEDIA QUERIES */
 
-@media (max-width: 1420px) {
+@media (min-width: 1280px) {
   .icon {
-    height: 45px;
-    width: 45px;
-    font-size: 1.8rem;
-  }
-}
-
-@media (max-width: 1300px) {
-  .icon {
-    left: 30px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .container {
-    width: 10%;
-  }
-}
-
-@media (max-width: 1100px) {
-  .icon {
-    left: 20px;
-  }
-}
-
-@media (max-width: 1000px) {
-  .icon {
-    left: 10px;
-  }
-}
-
-@media (max-width: 850px) {
-  .container {
-    width: 10%;
-  }
-}
-
-@media (max-width: 800px) {
-  .container {
-    width: 12%;
-  }
-}
-
-@media (max-width: 680px) {
-  .container {
-    width: 15%;
-  }
-}
-
-@media (max-width: 560px) {
-  .container {
-    width: 17%;
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
   }
 }

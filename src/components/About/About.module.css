@@ -1,17 +1,23 @@
 .container {
   height: auto;
-  width: 100%;
   margin-bottom: 3rem;
   margin-top: 1rem;
 }
 
-.heading {
-  font-size: 2.5rem;
-  font-family: var(--header-font);
-  color: var(--heading-font-color);
-  margin: 0;
-}
-
 .text {
   color: var(--default-font-color);
+  width: 65%;
+  font-size: 0.8rem;
+}
+
+@media (min-width: 340px) {
+  .text {
+    width: auto;
+}
+} 
+
+@media (min-width: 550px) {
+  .text {
+  font-size: 1rem;
+}
 }

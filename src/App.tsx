@@ -15,7 +15,9 @@ const App = (): JSX.Element => {
 
   return (
     <main className={styles.app}>
+      <div className={styles.show}>
       <Icons />
+      </div>
       <Card
         aboutRef={aboutRef}
         projectsRef={projectsRef}

@@ -1,5 +1,6 @@
 import { MutableRefObject, useState } from "react";
 import styles from "./Card.module.css";
+import Icons from "../Icons/Icons";
 
 type CardProps = {
   className?: string;
@@ -48,60 +49,61 @@ const Card = ({
       </header>
 
       {/* Navigation Container */}
-      <nav className={styles.nav} style={{ width: showNav ? "200px" : "60px" }}>
+      <nav className={styles.nav} style={{ width: showNav ? "200px" : "50px" }}>
         <button className={styles.hamburger} onClick={openSidebar}>
           <i className="fa-solid fa-bars"></i>
         </button>
-        <ul
-          className={styles["nav-links"]}
+        <div
+          className={styles["nav-open"]}
           style={{
             visibility: showNav ? "visible" : "hidden",
             animation: showNav ? "" : "slide-in",
           }}
         >
-          <li
-            onClick={() =>
-              aboutRef.current?.scrollIntoView({
-                behavior: "smooth",
-                block: "start",
-              })
-            }
-            className={styles["nav-link"]}
-          >
-            About
-          </li>
-          <li
-            onClick={() =>
-              projectsRef.current?.scrollIntoView({
-                behavior: "smooth",
-                block: "start",
-              })
-            }
-            className={styles["nav-link"]}
-          >
-            Projects
-          </li>
-          <li
-            onClick={() =>
-              contactsRef.current?.scrollIntoView({
-                behavior: "smooth",
-                block: "start",
-              })
-            }
-            className={styles["nav-link"]}
-          >
-            Contact
-          </li>
-        </ul>
+          <ul className={styles["nav-links"]}>
+            <li
+              onClick={() =>
+                aboutRef.current?.scrollIntoView({
+                  behavior: "smooth",
+                  block: "start",
+                })
+              }
+              className={styles["nav-link"]}
+            >
+              About
+            </li>
+            <li
+              onClick={() =>
+                projectsRef.current?.scrollIntoView({
+                  behavior: "smooth",
+                  block: "start",
+                })
+              }
+              className={styles["nav-link"]}
+            >
+              Projects
+            </li>
+            <li
+              onClick={() =>
+                contactsRef.current?.scrollIntoView({
+                  behavior: "smooth",
+                  block: "start",
+                })
+              }
+              className={styles["nav-link"]}
+            >
+              Contact
+            </li>
+          </ul>
+
+          <div className={styles.show}>
+            <Icons icons={'custom_icons_nav'} icon={'custom_icon_nav'} />
+          </div>
+        </div>
       </nav>
 
       {/* Content Container */}
-      <section
-        className={styles.content}
-        // style={{ width: showNav ? "1070px" : "1210px" }}
-      >
-        {children}
-      </section>
+      <section className={styles.content}>{children}</section>
     </main>
   );
 };
