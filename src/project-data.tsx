@@ -55,7 +55,7 @@ export const recipeBlog: ProjectTemplateProps = {
   ],
   links: [
     {
-      gitHub: "https://github.com/neelamkhan123/food-blog",
+      gitHub: "https://github.com/neelamkhan123/recipe-blog",
       website: "https://recipe-blog-neelam-khan.netlify.app/",
     },
   ],
@@ -84,7 +84,7 @@ export const ecommerceSite: ProjectTemplateProps = {
   ],
   links: [
     {
-      gitHub: "https://github.com/neelamkhan123/cozy-ecommerce-site-react",
+      gitHub: "https://github.com/neelamkhan123/cozy",
       website: "https://cozy-neelam-khan.netlify.app/",
     },
   ],
@@ -113,7 +113,7 @@ export const weatherForecast: ProjectTemplateProps = {
   ],
   links: [
     {
-      gitHub: "https://github.com/neelamkhan123/weather-webapp",
+      gitHub: "https://github.com/neelamkhan123/weather",
       website: "https://weather-neelam-khan.netlify.app/",
     },
   ],
@@ -142,7 +142,7 @@ export const toDoList: ProjectTemplateProps = {
   ],
   links: [
     {
-      gitHub: "https://github.com/neelamkhan123/react-to-do-list",
+      gitHub: "https://github.com/neelamkhan123/to-do-list",
       website: "https://to-do-list-neelam-khan.netlify.app/",
     },
   ],
@@ -200,7 +200,7 @@ export const gymWebDesign: ProjectTemplateProps = {
   ],
   links: [
     {
-      gitHub: "https://github.com/neelamkhan123/gym-website",
+      gitHub: "https://github.com/neelamkhan123/femgym",
       website: "https://femgym-neelam-khan.netlify.app/",
     },
   ],
@@ -229,7 +229,7 @@ export const trivia: ProjectTemplateProps = {
   ],
   links: [
     {
-      gitHub: "https://github.com/neelamkhan123/trivia-app",
+      gitHub: "https://github.com/neelamkhan123/trivia",
       website: "https://trivia-neelam-khan.netlify.app/",
     },
   ],
